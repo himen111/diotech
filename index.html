@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diotech Michał Chilmon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #001f3f;
+      color: white;
+    }
+    header {
+      background-color: #003366;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #FFDC00;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #FFDC00;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .services li::before {
+      content: '\f1c0';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #FFDC00;
+      margin-right: 10px;
+    }
+    .contact {
+      background-color: #003366;
+      padding: 20px;
+      color: white;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background-color: #FFDC00;
+      color: #001f3f;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #000814;
+      color: #aaa;
+    }
+    .icon-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .icon-grid i {
+      font-size: 4em;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .icon-grid i:hover {
+      transform: scale(1.2);
+      color: #FFDC00;
+    }
+    .highlight {
+      background-color: #FFDC00;
+      color: #001f3f;
+      padding: 20px;
+      margin: 30px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.4em;
+      border-radius: 10px;
+    }
+    .map {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .map a {
+      background-color: #FFDC00;
+      color: #001f3f;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .phone-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #FFDC00;
+      color: #001f3f;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      z-index: 1000;
+    }
+    .phone-bar a {
+      color: #001f3f;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Diotech Michał Chilmon</h1>
+    <p>Naprawa urządzeń elektronicznych: telefony, komputery, tablety, telewizory, konsole, radioodtwarzacze</p>
+  </header>
+  <section>
+    <h2>Adres</h2>
+    <p>Dąbrowa Białostocka, ul. Tysiąclecia P.P. 22</p>
+
+    <div class="map">
+      <a href="https://www.google.com/maps?q=53.65207748831098,23.353816165598143" target="_blank">
+        <i class="fas fa-map-marker-alt"></i> Zobacz w Google Maps
+      </a>
+    </div>
+
+    <div class="icon-grid">
+      <i class="fas fa-mobile-alt"></i>
+      <i class="fas fa-laptop"></i>
+      <i class="fas fa-tv"></i>
+      <i class="fas fa-gamepad"></i>
+      <i class="fas fa-headphones"></i>
+      <i class="fas fa-camera"></i>
+    </div>
+
+    <div class="highlight">Bezpłatna diagnoza!</div>
+
+    <h2>Godziny otwarcia</h2>
+    <ul>
+      <li>Poniedziałek–Piątek: 9:00–17:00</li>
+      <li>Sobota–Niedziela: Nieczynne</li>
+    </ul>
+
+    <h2>Usługi</h2>
+    <ul class="services">
+      <li>Naprawa telefonów komórkowych</li>
+      <li>Naprawa komputerów</li>
+      <li>Naprawa tabletów</li>
+      <li>Naprawa telewizorów</li>
+      <li>Naprawa konsol do gier</li>
+      <li>Naprawa radioodtwarzaczy</li>
+      <li>Naprawa aparatów cyfrowych</li>
+      <li>Naprawa prostowników</li>
+      <li>Naprawa odtwarzaczy DVD</li>
+      <li>Naprawa pilotów</li>
+      <li>Naprawa słuchawek</li>
+      <li>Wymiana wyświetlaczy, baterii</li>
+      <li>Naprawa złączy USB, głośników, mikrofonów</li>
+      <li>Wymiana tylnej klapki, szkiełek aparatów</li>
+      <li><strong>Wymiana tylnych szybek w iPhone'ach</strong></li>
+    </ul>
+
+    <h2>Specjalizacje</h2>
+    <ul>
+      <li>Reballing BGA – naprawa procesorów graficznych w laptopach i kartach graficznych (na maszynie na podczerwień Jovy RE-8500)</li>
+      <li>Naprawa procesorów w telewizorach</li>
+      <li>Programowanie pamięci szeregowych: SPI, NAND, eMMC, EEPROM</li>
+    </ul>
+  </section>
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <p>Telefon: <strong>508 409 054</strong></p>
+
+    <h2>Formularz kontaktowy</h2>
+    <form action="https://formspree.io/f/xayrwqob" method="POST">
+      <input type="text" name="name" placeholder="Twoje imię" required>
+      <input type="email" name="email" placeholder="Twój e-mail" required>
+      <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
+      <input type="hidden" name="_replyto" value="himen111@gmail.com">
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Diotech Michał Chilmon. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+  <div class="phone-bar">
+    <a href="tel:508409054"><i class="fas fa-phone-alt"></i> Zadzwoń: 508 409 054</a>
+  </div>
+</body>
+</html>
